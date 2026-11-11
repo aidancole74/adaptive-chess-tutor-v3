@@ -1,0 +1,138 @@
+{
+ "id": "openings",
+ "domain": "openings",
+ "version": "1",
+ "license": "CC0-1.0 (Lichess game database; lichess-org/chess-openings)",
+ "source": "lichess-org/chess-openings; https://database.lichess.org/standard/lichess_db_standard_rated_2026-10.pgn.zst; Stockfish evaluations",
+ "generatedAt": "2026-11-11T02:55:46.493Z",
+ "count": 74735,
+ "shards": [
+  {
+   "file": "names.json",
+   "key": "names",
+   "count": 3865,
+   "bytes": 660431
+  },
+  {
+   "file": "book-0-1199.json",
+   "key": "book:0-1199",
+   "count": 15727,
+   "bytes": 1609008
+  },
+  {
+   "file": "book-1200-1599.json",
+   "key": "book:1200-1599",
+   "count": 18593,
+   "bytes": 1914909
+  },
+  {
+   "file": "book-1600-1999.json",
+   "key": "book:1600-1999",
+   "count": 18280,
+   "bytes": 1854482
+  },
+  {
+   "file": "book-2000+.json",
+   "key": "book:2000+",
+   "count": 18192,
+   "bytes": 1743688
+  },
+  {
+   "file": "traps.json",
+   "key": "traps",
+   "count": 7,
+   "bytes": 6664
+  },
+  {
+   "file": "cards.json",
+   "key": "cards",
+   "count": 71,
+   "bytes": 67617
+  }
+ ],
+ "meta": {
+  "month": "2026-10",
+  "gamesStreamed": 2000000,
+  "gamesAggregated": 1263720,
+  "gamesAggregatedPerBand": {
+   "0-1199": 218663,
+   "1200-1599": 432995,
+   "1600-1999": 466187,
+   "2000+": 145875
+  },
+  "positionsPerBand": {
+   "0-1199": 15727,
+   "1200-1599": 18593,
+   "1600-1999": 18280,
+   "2000+": 18192
+  },
+  "movesPerBand": {
+   "0-1199": 32215,
+   "1200-1599": 36533,
+   "1600-1999": 33887,
+   "2000+": 30587
+  },
+  "bookComplete": true,
+  "bookPartialReason": null,
+  "bookFilters": "rated standard games from the normal start position; both Elos present; result 1-0/0-1/1/2-1/2; Termination Normal or Time forfeit; base+40*inc >= 180s (bullet, ultrabullet and correspondence skipped); >= 2 plies (games shorter than 14 plies count for the plies they have); band = average of both Elos",
+  "bookSkipped": {
+   "missingElo": 0,
+   "variantOrFen": 0,
+   "termination": 5326,
+   "noResult": 0,
+   "tooFast": 729935,
+   "tooShort": 1019
+  },
+  "pruning": {
+   "rule": "per band: moves with fewer than minMoveGames games are dropped; minMoveGames = max(floor, smallest value keeping the shard JSON under shardByteBudget)",
+   "floor": 5,
+   "shardByteBudget": 2000000,
+   "minMoveGamesPerBand": {
+    "0-1199": 6,
+    "1200-1599": 11,
+    "1600-1999": 14,
+    "2000+": 6
+   }
+  },
+  "plies": 14,
+  "names": {
+   "count": 3865,
+   "failed": 0
+  },
+  "traps": {
+   "candidates": 77,
+   "analysed": 77,
+   "confirmed": 7,
+   "perBand": {
+    "0-1199": 2,
+    "1200-1599": 5,
+    "1600-1999": 0,
+    "2000+": 0
+   },
+   "rules": {
+    "minFreq": 0.05,
+    "minGames": 150,
+    "minScoreGapPct": 12,
+    "minDropCp": 150,
+    "depth": 16,
+    "safeMarginCp": 60,
+    "maxCandidates": 1500
+   }
+  },
+  "cards": {
+   "count": 71,
+   "families": 24,
+   "skipped": null,
+   "rules": {
+    "plies": [
+     12,
+     13
+    ],
+    "minFamilyGames": 300,
+    "minPositionGames": 80,
+    "perFamily": 3,
+    "continuationsPerBand": 3
+   }
+  }
+ }
+}

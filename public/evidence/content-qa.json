@@ -1,0 +1,580 @@
+{
+ "generatedAt": "2026-11-11T16:19:56.336Z",
+ "summary": [
+  {
+   "pack": "endgames",
+   "items": 1107,
+   "verifiedPct": 100,
+   "duplicatePct": 0.09033423667570009,
+   "legalityPct": 100
+  },
+  {
+   "pack": "openings (names)",
+   "items": 3865,
+   "verifiedPct": 100,
+   "duplicatePct": null,
+   "legalityPct": 100
+  },
+  {
+   "pack": "openings (traps)",
+   "items": 7,
+   "verifiedPct": 100,
+   "duplicatePct": null,
+   "legalityPct": 100
+  },
+  {
+   "pack": "strategy",
+   "items": 2986,
+   "verifiedPct": 100,
+   "duplicatePct": 0,
+   "legalityPct": 100
+  },
+  {
+   "pack": "tactics",
+   "items": 59983,
+   "verifiedPct": 100,
+   "duplicatePct": 0,
+   "legalityPct": 100
+  }
+ ],
+ "perConcept": {
+  "endgames/mating/kqk": [
+   79,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "endgames/mating/krk": [
+   80,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "endgames/pawn/rule-of-the-square": [
+   4,
+   49,
+   27,
+   0,
+   0,
+   0,
+   0
+  ],
+  "endgames/pawn/opposition": [
+   0,
+   0,
+   80,
+   0,
+   0,
+   0,
+   0
+  ],
+  "endgames/pawn/key-squares": [
+   0,
+   0,
+   22,
+   58,
+   0,
+   0,
+   0
+  ],
+  "endgames/pawn/pawn-race": [
+   0,
+   5,
+   28,
+   47,
+   0,
+   0,
+   0
+  ],
+  "endgames/pawn/outside-passed-pawn": [
+   0,
+   0,
+   64,
+   11,
+   5,
+   0,
+   0
+  ],
+  "endgames/pawn/zugzwang": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   80,
+   0
+  ],
+  "endgames/queen/kq-vs-kp": [
+   0,
+   0,
+   31,
+   33,
+   4,
+   0,
+   0
+  ],
+  "endgames/rook/cutting-off-king": [
+   0,
+   0,
+   0,
+   10,
+   0,
+   0,
+   0
+  ],
+  "endgames/rook/rook-behind-passed-pawn": [
+   0,
+   0,
+   9,
+   26,
+   5,
+   0,
+   0
+  ],
+  "endgames/rook/lucena": [
+   0,
+   0,
+   79,
+   1,
+   0,
+   0,
+   0
+  ],
+  "endgames/rook/philidor": [
+   0,
+   0,
+   0,
+   10,
+   0,
+   0,
+   0
+  ],
+  "endgames/minor/wrong-bishop": [
+   0,
+   0,
+   27,
+   40,
+   13,
+   0,
+   0
+  ],
+  "endgames/minor/same-color-bishops": [
+   0,
+   0,
+   0,
+   21,
+   15,
+   16,
+   0
+  ],
+  "endgames/minor/opposite-color-bishops": [
+   0,
+   0,
+   0,
+   16,
+   16,
+   20,
+   0
+  ],
+  "endgames/minor/knight-vs-bishop": [
+   0,
+   0,
+   0,
+   14,
+   7,
+   28,
+   0
+  ],
+  "endgames/drawing/fortress": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   21,
+   6
+  ],
+  "openings/skills/traps": [
+   0,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "openings/skills/structures": [
+   0,
+   0,
+   71,
+   0,
+   0,
+   0,
+   0
+  ],
+  "strategy/planning/quiet-move": [
+   0,
+   0,
+   236,
+   1580,
+   1170,
+   0,
+   0
+  ],
+  "tactics/mating/backRankMate": [
+   296,
+   288,
+   284,
+   289,
+   176,
+   138,
+   77
+  ],
+  "tactics/basics/mateIn1": [
+   338,
+   237,
+   272,
+   287,
+   206,
+   186,
+   22
+  ],
+  "tactics/pawns/advancedPawn": [
+   238,
+   185,
+   252,
+   233,
+   158,
+   143,
+   354
+  ],
+  "tactics/attack/attackingF2F7": [
+   137,
+   184,
+   261,
+   278,
+   191,
+   182,
+   317
+  ],
+  "tactics/mating/mateIn2": [
+   294,
+   203,
+   240,
+   243,
+   170,
+   178,
+   220
+  ],
+  "tactics/attack/kingsideAttack": [
+   224,
+   187,
+   258,
+   251,
+   171,
+   149,
+   336
+  ],
+  "tactics/mating/mateIn3": [
+   279,
+   191,
+   228,
+   218,
+   175,
+   167,
+   290
+  ],
+  "tactics/pawns/promotion": [
+   284,
+   213,
+   265,
+   238,
+   170,
+   136,
+   316
+  ],
+  "tactics/attack/queensideAttack": [
+   207,
+   181,
+   249,
+   257,
+   173,
+   153,
+   328
+  ],
+  "tactics/basics/hangingPiece": [
+   206,
+   229,
+   302,
+   286,
+   186,
+   160,
+   345
+  ],
+  "tactics/double-attack/pin": [
+   155,
+   219,
+   291,
+   258,
+   201,
+   178,
+   386
+  ],
+  "tactics/mating/bodenMate": [
+   302,
+   601,
+   364,
+   170,
+   79,
+   23,
+   5
+  ],
+  "tactics/mating/arabianMate": [
+   236,
+   264,
+   376,
+   286,
+   208,
+   116,
+   62
+  ],
+  "tactics/removing-defender/attraction": [
+   121,
+   175,
+   262,
+   241,
+   175,
+   183,
+   434
+  ],
+  "tactics/attack/sacrifice": [
+   109,
+   138,
+   240,
+   210,
+   201,
+   189,
+   461
+  ],
+  "tactics/subtle/quietMove": [
+   218,
+   185,
+   226,
+   204,
+   147,
+   170,
+   493
+  ],
+  "tactics/double-attack/fork": [
+   183,
+   394,
+   548,
+   385,
+   207,
+   167,
+   432
+  ],
+  "tactics/mating/anastasiaMate": [
+   245,
+   347,
+   369,
+   367,
+   146,
+   63,
+   11
+  ],
+  "tactics/mating/hookMate": [
+   115,
+   212,
+   345,
+   383,
+   245,
+   168,
+   80
+  ],
+  "tactics/mating/doubleBishopMate": [
+   574,
+   715,
+   55,
+   114,
+   32,
+   11,
+   3
+  ],
+  "tactics/removing-defender/deflection": [
+   115,
+   176,
+   280,
+   260,
+   180,
+   174,
+   447
+  ],
+  "tactics/mating/smotheredMate": [
+   133,
+   239,
+   483,
+   522,
+   150,
+   19,
+   1
+  ],
+  "tactics/double-attack/doubleCheck": [
+   101,
+   169,
+   269,
+   280,
+   223,
+   183,
+   324
+  ],
+  "tactics/subtle/defensiveMove": [
+   120,
+   210,
+   276,
+   254,
+   214,
+   211,
+   595
+  ],
+  "tactics/double-attack/discoveredAttack": [
+   152,
+   219,
+   308,
+   283,
+   198,
+   182,
+   353
+  ],
+  "tactics/attack/exposedKing": [
+   79,
+   121,
+   264,
+   232,
+   203,
+   204,
+   450
+  ],
+  "tactics/subtle/zugzwang": [
+   111,
+   185,
+   239,
+   216,
+   167,
+   178,
+   462
+  ],
+  "tactics/double-attack/xRayAttack": [
+   87,
+   189,
+   278,
+   275,
+   207,
+   213,
+   304
+  ],
+  "tactics/double-attack/skewer": [
+   150,
+   229,
+   280,
+   251,
+   168,
+   184,
+   380
+  ],
+  "tactics/removing-defender/clearance": [
+   83,
+   166,
+   252,
+   233,
+   164,
+   194,
+   460
+  ],
+  "tactics/mating/dovetailMate": [
+   78,
+   266,
+   412,
+   397,
+   223,
+   111,
+   61
+  ],
+  "tactics/removing-defender/interference": [
+   19,
+   158,
+   270,
+   261,
+   194,
+   208,
+   441
+  ],
+  "tactics/subtle/trappedPiece": [
+   44,
+   141,
+   279,
+   253,
+   205,
+   201,
+   444
+  ],
+  "tactics/removing-defender/capturingDefender": [
+   31,
+   136,
+   271,
+   284,
+   202,
+   213,
+   440
+  ],
+  "tactics/removing-defender/intermezzo": [
+   15,
+   122,
+   261,
+   293,
+   189,
+   213,
+   488
+  ],
+  "tactics/mating/mateIn4": [
+   14,
+   221,
+   282,
+   249,
+   215,
+   208,
+   358
+  ],
+  "tactics/pawns/underPromotion": [
+   12,
+   80,
+   71,
+   85,
+   118,
+   184,
+   159
+  ],
+  "tactics/mating/mateIn5": [
+   0,
+   18,
+   133,
+   230,
+   318,
+   351,
+   449
+  ]
+ },
+ "empty": [
+  "tactics/awareness/noTactic",
+  "endgames/pawn/triangulation",
+  "openings/repertoire/white-lines",
+  "openings/repertoire/black-lines",
+  "openings/skills/deviation"
+ ]
+}

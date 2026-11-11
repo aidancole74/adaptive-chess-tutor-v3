@@ -1,0 +1,147 @@
+{
+ "generatedAt": "2026-11-11T16:22:59.164Z",
+ "config": {
+  "learners": 24,
+  "days": 30,
+  "sessionMinutes": 10,
+  "retentionGapDays": 21,
+  "seed": 1,
+  "concepts": 40
+ },
+ "metrics": [
+  {
+   "key": "rmseEstimate",
+   "label": "Estimate RMSE, all concepts",
+   "better": "lower"
+  },
+  {
+   "key": "rmsePractised",
+   "label": "Estimate RMSE, practised concepts",
+   "better": "lower"
+  },
+  {
+   "key": "brier",
+   "label": "Brier score",
+   "better": "lower"
+  },
+  {
+   "key": "ece",
+   "label": "Calibration error (ECE)",
+   "better": "lower"
+  },
+  {
+   "key": "maxStreak",
+   "label": "Max same-concept streak",
+   "better": "lower"
+  },
+  {
+   "key": "conceptEntropy",
+   "label": "Concept entropy (0-1)",
+   "better": "higher"
+  },
+  {
+   "key": "distinctPerSession",
+   "label": "Distinct concepts per session",
+   "better": "higher"
+  },
+  {
+   "key": "meanGain",
+   "label": "Mean hidden-skill gain",
+   "better": "higher"
+  },
+  {
+   "key": "retention",
+   "label": "Retention: P(solve tier item) after 21 idle days",
+   "better": "higher"
+  },
+  {
+   "key": "meanP",
+   "label": "Mean true success probability",
+   "better": "higher"
+  }
+ ],
+ "rows": [
+  {
+   "policy": "adaptive",
+   "rmseEstimate": 219.44611659917283,
+   "rmsePractised": 214.20043844048578,
+   "brier": 0.14103374776395045,
+   "ece": 0.040207197211138246,
+   "maxStreak": 2,
+   "conceptEntropy": 0.7576068813854435,
+   "distinctPerSession": 6.127777777777778,
+   "meanGain": 37.009269322931424,
+   "retention": 0.5636198671688627,
+   "meanP": 0.8356449513477664,
+   "attempts": 5941
+  },
+  {
+   "policy": "adaptive-no-curriculum",
+   "rmseEstimate": 225.17971431959714,
+   "rmsePractised": 223.8392488541225,
+   "brier": 0.15977096741886887,
+   "ece": 0.044340625839116826,
+   "maxStreak": 2,
+   "conceptEntropy": 0.9463931476745411,
+   "distinctPerSession": 7.151388888888889,
+   "meanGain": 42.300958532648195,
+   "retention": 0.5710169264357607,
+   "meanP": 0.8037071324274309,
+   "attempts": 6480
+  },
+  {
+   "policy": "random",
+   "rmseEstimate": 181.24154683633327,
+   "rmsePractised": 181.24154683633327,
+   "brier": 0.1403522428798313,
+   "ece": 0.04223721501554249,
+   "maxStreak": 3,
+   "conceptEntropy": 0.9991579896673991,
+   "distinctPerSession": 8.16388888888889,
+   "meanGain": 45.43862801071914,
+   "retention": 0.5700370931901845,
+   "meanP": 0.48150795871681973,
+   "attempts": 6480
+  },
+  {
+   "policy": "weakest-only",
+   "rmseEstimate": 229.3002991563068,
+   "rmsePractised": 224.8639443318104,
+   "brier": 0.18077776823038322,
+   "ece": 0.05113566030373452,
+   "maxStreak": 9,
+   "conceptEntropy": 0.5100460731285085,
+   "distinctPerSession": 1.3152777777777778,
+   "meanGain": 18.513642980151236,
+   "retention": 0.5496441465863976,
+   "meanP": 0.7519877370009208,
+   "attempts": 6480
+  },
+  {
+   "policy": "fixed-curriculum",
+   "rmseEstimate": 207.95271964271325,
+   "rmsePractised": 197.79354897639675,
+   "brier": 0.1631048787161598,
+   "ece": 0.06363997513163575,
+   "maxStreak": 9,
+   "conceptEntropy": 0.8482029892302472,
+   "distinctPerSession": 1.5,
+   "meanGain": 43.392552456973235,
+   "retention": 0.5677902233604216,
+   "meanP": 0.6711090519618571,
+   "attempts": 6480
+  }
+ ],
+ "verdict": [
+  "Estimate RMSE, all concepts: random is best (181.2); adaptive scores 219.4.",
+  "Estimate RMSE, practised concepts: random is best (181.2); adaptive scores 214.2.",
+  "Brier score: random is best (0.140); adaptive scores 0.141.",
+  "Calibration error (ECE): the adaptive scheduler is best (0.040).",
+  "Max same-concept streak: the adaptive scheduler is best (2.000).",
+  "Concept entropy (0-1): random is best (0.999); adaptive scores 0.758.",
+  "Distinct concepts per session: random is best (8.164); adaptive scores 6.128.",
+  "Mean hidden-skill gain: random is best (45.4); adaptive scores 37.0.",
+  "Retention: P(solve tier item) after 21 idle days: adaptive-no-curriculum is best (0.571); adaptive scores 0.564.",
+  "Mean true success probability: the adaptive scheduler is best (0.836)."
+ ]
+}

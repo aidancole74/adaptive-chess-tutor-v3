@@ -1,0 +1,601 @@
+{
+ "id": "endgames",
+ "domain": "endgames",
+ "version": "1",
+ "license": "Positions generated procedurally; results from the Lichess tablebase API (tablebase.lichess.ovh, Syzygy/Gaviota)",
+ "source": "scripts/endgames/build.ts",
+ "generatedAt": "2026-11-11T05:53:53.609Z",
+ "count": 1107,
+ "shards": [
+  {
+   "file": "triangulation.json",
+   "key": "endgames/pawn/triangulation",
+   "count": 0,
+   "bytes": 2
+  },
+  {
+   "file": "kqk.json",
+   "key": "endgames/mating/kqk",
+   "count": 79,
+   "bytes": 148377
+  },
+  {
+   "file": "krk.json",
+   "key": "endgames/mating/krk",
+   "count": 80,
+   "bytes": 108991
+  },
+  {
+   "file": "rule-of-the-square.json",
+   "key": "endgames/pawn/rule-of-the-square",
+   "count": 80,
+   "bytes": 51379
+  },
+  {
+   "file": "opposition.json",
+   "key": "endgames/pawn/opposition",
+   "count": 80,
+   "bytes": 46442
+  },
+  {
+   "file": "key-squares.json",
+   "key": "endgames/pawn/key-squares",
+   "count": 80,
+   "bytes": 50830
+  },
+  {
+   "file": "pawn-race.json",
+   "key": "endgames/pawn/pawn-race",
+   "count": 80,
+   "bytes": 50472
+  },
+  {
+   "file": "outside-passed-pawn.json",
+   "key": "endgames/pawn/outside-passed-pawn",
+   "count": 80,
+   "bytes": 59265
+  },
+  {
+   "file": "zugzwang.json",
+   "key": "endgames/pawn/zugzwang",
+   "count": 80,
+   "bytes": 45359
+  },
+  {
+   "file": "kq-vs-kp.json",
+   "key": "endgames/queen/kq-vs-kp",
+   "count": 68,
+   "bytes": 123767
+  },
+  {
+   "file": "cutting-off-king.json",
+   "key": "endgames/rook/cutting-off-king",
+   "count": 10,
+   "bytes": 13185
+  },
+  {
+   "file": "rook-behind-passed-pawn.json",
+   "key": "endgames/rook/rook-behind-passed-pawn",
+   "count": 40,
+   "bytes": 52436
+  },
+  {
+   "file": "lucena.json",
+   "key": "endgames/rook/lucena",
+   "count": 80,
+   "bytes": 95529
+  },
+  {
+   "file": "philidor.json",
+   "key": "endgames/rook/philidor",
+   "count": 10,
+   "bytes": 11780
+  },
+  {
+   "file": "wrong-bishop.json",
+   "key": "endgames/minor/wrong-bishop",
+   "count": 80,
+   "bytes": 76473
+  },
+  {
+   "file": "same-color-bishops.json",
+   "key": "endgames/minor/same-color-bishops",
+   "count": 52,
+   "bytes": 53545
+  },
+  {
+   "file": "opposite-color-bishops.json",
+   "key": "endgames/minor/opposite-color-bishops",
+   "count": 52,
+   "bytes": 53235
+  },
+  {
+   "file": "knight-vs-bishop.json",
+   "key": "endgames/minor/knight-vs-bishop",
+   "count": 49,
+   "bytes": 47339
+  },
+  {
+   "file": "fortress.json",
+   "key": "endgames/drawing/fortress",
+   "count": 27,
+   "bytes": 27369
+  }
+ ],
+ "meta": {
+  "perConcept": {
+   "endgames/mating/kqk": {
+    "candidates": 242,
+    "probed": 240,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 22,
+    "bucketFull": 139,
+    "kept": 79,
+    "onlyMove": 0,
+    "wins": 79,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 2,
+    "tierCounts": {
+     "0": 79
+    },
+    "buckets": {
+     "short": 24,
+     "mid": 32,
+     "long": 23
+    },
+    "extraProbes": 0,
+    "property": "K+Q vs K, side to move wins (tablebase), bucketed by DTM: short <= 7 plies, mid <= 13, long beyond",
+    "verificationPassRate": 0.329
+   },
+   "endgames/mating/krk": {
+    "candidates": 133,
+    "probed": 133,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 5,
+    "bucketFull": 48,
+    "kept": 80,
+    "onlyMove": 0,
+    "wins": 80,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "0": 80
+    },
+    "buckets": {
+     "long": 24,
+     "short": 24,
+     "mid": 32
+    },
+    "extraProbes": 0,
+    "property": "K+R vs K, side to move wins (tablebase), bucketed by DTM: short <= 11 plies, mid <= 21, long beyond",
+    "verificationPassRate": 0.602
+   },
+   "endgames/pawn/rule-of-the-square": {
+    "candidates": 129,
+    "probed": 128,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 48,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 27,
+    "wins": 32,
+    "draws": 48,
+    "losses": 0,
+    "duplicates": 1,
+    "tierCounts": {
+     "0": 4,
+     "1": 49,
+     "2": 27
+    },
+    "buckets": {
+     "w-win": 32,
+     "b-draw": 24,
+     "w-draw": 24
+    },
+    "extraProbes": 0,
+    "property": "K+P vs K with the attacking king too far away to help; the tablebase result equals the square-rule prediction (defender inside the square: draw; outside: the pawn wins; the defender-to-move side ships only the drawing case). Winning items must have the pawn push among the winning moves.",
+    "verificationPassRate": 0.625
+   },
+   "endgames/pawn/opposition": {
+    "candidates": 86,
+    "probed": 80,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 0,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 80,
+    "wins": 44,
+    "draws": 36,
+    "losses": 0,
+    "duplicates": 6,
+    "tierCounts": {
+     "2": 80
+    },
+    "buckets": {
+     "def": 36,
+     "att": 44
+    },
+    "extraProbes": 0,
+    "property": "K+P vs K where exactly one move keeps the result (attacker: only winning move; defender: only drawing move), that move is a king move, and after it the kings stand in direct, diagonal or distant opposition.",
+    "verificationPassRate": 1
+   },
+   "endgames/pawn/key-squares": {
+    "candidates": 81,
+    "probed": 80,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 0,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 48,
+    "wins": 80,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 1,
+    "tierCounts": {
+     "2": 22,
+     "3": 58
+    },
+    "buckets": {
+     "two": 32,
+     "only": 48
+    },
+    "extraProbes": 0,
+    "property": "K+P (non-rook pawn) vs K, attacker to move and winning; no pawn move wins, at most two king moves win, and a winning king move lands on a key square of the pawn or gets strictly closer to one.",
+    "verificationPassRate": 1
+   },
+   "endgames/pawn/pawn-race": {
+    "candidates": 110,
+    "probed": 110,
+    "probeErrors": 0,
+    "inexact": 6,
+    "propertyFailed": 1,
+    "bucketFull": 23,
+    "kept": 80,
+    "onlyMove": 47,
+    "wins": 40,
+    "draws": 40,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "1": 5,
+     "2": 28,
+     "3": 47
+    },
+    "buckets": {
+     "draw": 40,
+     "win": 40
+    },
+    "extraProbes": 0,
+    "property": "K+P vs K+P, passed pawns at least two files apart, each king outside the square of the enemy pawn and off both pawn paths, pawns within one tempo of each other; the tablebase labels the race (win / draw; lost races are dropped). The pawn push is among the best moves.",
+    "verificationPassRate": 0.727
+   },
+   "endgames/pawn/outside-passed-pawn": {
+    "candidates": 128,
+    "probed": 128,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 48,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 5,
+    "wins": 80,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "2": 64,
+     "3": 11,
+     "4": 5
+    },
+    "buckets": {
+     "p7": 20,
+     "p5": 60
+    },
+    "extraProbes": 96,
+    "property": "Pawn ending (5 or 7 pieces): the side to move has a passed pawn on the a/b (or g/h) file at least three files from every other pawn, the defending king is inside its square, equal pawns on the other wing; the tablebase says win, no winning first move is a capture, and the same position without the passed pawn is NOT a win (second probe).",
+    "verificationPassRate": 0.625
+   },
+   "endgames/pawn/zugzwang": {
+    "candidates": 94,
+    "probed": 80,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 0,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 80,
+    "wins": 48,
+    "draws": 32,
+    "losses": 0,
+    "duplicates": 14,
+    "tierCounts": {
+     "5": 80
+    },
+    "buckets": {
+     "attacker": 48,
+     "defender": 32
+    },
+    "extraProbes": 80,
+    "property": "K+P vs K or K+P vs K+P (blocked pawns): exactly one move keeps the side to move's result, and after it the opponent to move scores strictly worse than with the same placement and the mover to move (mutual zugzwang, two tablebase probes).",
+    "verificationPassRate": 1
+   },
+   "endgames/queen/kq-vs-kp": {
+    "candidates": 242,
+    "probed": 240,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 0,
+    "bucketFull": 172,
+    "kept": 68,
+    "onlyMove": 4,
+    "wins": 44,
+    "draws": 24,
+    "losses": 0,
+    "duplicates": 2,
+    "tierCounts": {
+     "2": 31,
+     "3": 33,
+     "4": 4
+    },
+    "buckets": {
+     "rb-draw": 24,
+     "nc-win": 28,
+     "rb-win": 16
+    },
+    "extraProbes": 0,
+    "property": "K+Q vs K+P, the pawn one step from promotion with its king next to it and the queen side's king at least 4 squares away; queen side to move. Rook and bishop pawns (expected draws) and knight and centre pawns (expected wins) are generated; the tablebase labels each.",
+    "verificationPassRate": 0.283
+   },
+   "endgames/rook/cutting-off-king": {
+    "candidates": 400,
+    "probed": 400,
+    "probeErrors": 0,
+    "inexact": 2,
+    "propertyFailed": 388,
+    "bucketFull": 0,
+    "kept": 10,
+    "onlyMove": 10,
+    "wins": 10,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "3": 10
+    },
+    "buckets": {
+     "file": 10
+    },
+    "extraProbes": 0,
+    "property": "K+R+P vs K+R, attacker to move and winning; at most three winning moves, every one of them a rook move to a file (rank) strictly between the defending king and the pawn, the rook not capturable there; before the move the rook did not cut the king off; at least 5 moves fail to win.",
+    "verificationPassRate": 0.025
+   },
+   "endgames/rook/rook-behind-passed-pawn": {
+    "candidates": 320,
+    "probed": 320,
+    "probeErrors": 0,
+    "inexact": 34,
+    "propertyFailed": 246,
+    "bucketFull": 0,
+    "kept": 40,
+    "onlyMove": 4,
+    "wins": 22,
+    "draws": 18,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "2": 9,
+     "3": 26,
+     "4": 5
+    },
+    "buckets": {
+     "defender": 16,
+     "attacker": 24
+    },
+    "extraProbes": 0,
+    "property": "K+R+P vs K+R with the pawn on its 3rd-5th rank and neither rook behind it; a rook move to the pawn's file behind the pawn (clear path) is among the best moves, and at least one third of the legal moves do not keep the result.",
+    "verificationPassRate": 0.125
+   },
+   "endgames/rook/lucena": {
+    "candidates": 86,
+    "probed": 86,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 6,
+    "bucketFull": 0,
+    "kept": 80,
+    "onlyMove": 0,
+    "wins": 80,
+    "draws": 0,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "2": 79,
+     "3": 1
+    },
+    "buckets": {
+     "win": 80
+    },
+    "extraProbes": 0,
+    "property": "K+R+P vs K+R: pawn (b-g file) on its 7th rank, attacker's king on the queening square, defending king at least two files away and cut off by the attacker's rook on a file in between; attacker to move; tablebase: win.",
+    "verificationPassRate": 0.93
+   },
+   "endgames/rook/philidor": {
+    "candidates": 320,
+    "probed": 320,
+    "probeErrors": 0,
+    "inexact": 3,
+    "propertyFailed": 307,
+    "bucketFull": 0,
+    "kept": 10,
+    "onlyMove": 0,
+    "wins": 0,
+    "draws": 10,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "3": 10
+    },
+    "buckets": {
+     "third-rank": 8,
+     "other": 2
+    },
+    "extraProbes": 0,
+    "property": "K+R+P vs K+R: defending king on the pawn's queening square, pawn and attacking king not beyond the 5th rank; defender to move; tablebase: exact draw, and at most half of the defender's legal moves hold.",
+    "verificationPassRate": 0.031
+   },
+   "endgames/minor/wrong-bishop": {
+    "candidates": 212,
+    "probed": 212,
+    "probeErrors": 0,
+    "inexact": 57,
+    "propertyFailed": 0,
+    "bucketFull": 75,
+    "kept": 80,
+    "onlyMove": 12,
+    "wins": 36,
+    "draws": 44,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "2": 27,
+     "3": 40,
+     "4": 13
+    },
+    "buckets": {
+     "wrong-draw": 36,
+     "right-draw": 8,
+     "right-win": 28,
+     "wrong-win": 8
+    },
+    "extraProbes": 0,
+    "property": "K+B+rook pawn vs K, defending king within 3 squares of the queening corner. \"wrong\" = bishop does not control the queening square. Both bishop colours are generated; the tablebase labels the result.",
+    "verificationPassRate": 0.377
+   },
+   "endgames/minor/same-color-bishops": {
+    "candidates": 240,
+    "probed": 240,
+    "probeErrors": 0,
+    "inexact": 2,
+    "propertyFailed": 100,
+    "bucketFull": 86,
+    "kept": 52,
+    "onlyMove": 15,
+    "wins": 44,
+    "draws": 8,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "3": 21,
+     "4": 15,
+     "5": 16
+    },
+    "buckets": {
+     "win": 44,
+     "draw": 8
+    },
+    "extraProbes": 0,
+    "property": "K+B+P(s) vs K+B(+P), same-coloured bishops, <= 7 pieces, attacker (more pawns) to move; at least one legal move changes the tablebase result.",
+    "verificationPassRate": 0.217
+   },
+   "endgames/minor/opposite-color-bishops": {
+    "candidates": 240,
+    "probed": 240,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 168,
+    "bucketFull": 20,
+    "kept": 52,
+    "onlyMove": 18,
+    "wins": 44,
+    "draws": 8,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "3": 16,
+     "4": 16,
+     "5": 20
+    },
+    "buckets": {
+     "win": 44,
+     "draw": 8
+    },
+    "extraProbes": 0,
+    "property": "K+B+P(s) vs K+B(+P), opposite-coloured bishops, <= 7 pieces, attacker (more pawns) to move; at least one legal move changes the tablebase result.",
+    "verificationPassRate": 0.217
+   },
+   "endgames/minor/knight-vs-bishop": {
+    "candidates": 240,
+    "probed": 240,
+    "probeErrors": 0,
+    "inexact": 0,
+    "propertyFailed": 151,
+    "bucketFull": 40,
+    "kept": 49,
+    "onlyMove": 28,
+    "wins": 48,
+    "draws": 1,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "3": 14,
+     "4": 7,
+     "5": 28
+    },
+    "buckets": {
+     "N-win": 24,
+     "B-win": 24,
+     "N-draw": 1
+    },
+    "extraProbes": 0,
+    "property": "K+N+P vs K+B or K+B+P vs K+N, pawn side to move; at least one legal move changes the tablebase result.",
+    "verificationPassRate": 0.204
+   },
+   "endgames/drawing/fortress": {
+    "candidates": 320,
+    "probed": 320,
+    "probeErrors": 0,
+    "inexact": 210,
+    "propertyFailed": 83,
+    "bucketFull": 0,
+    "kept": 27,
+    "onlyMove": 6,
+    "wins": 0,
+    "draws": 27,
+    "losses": 0,
+    "duplicates": 0,
+    "tierCounts": {
+     "5": 21,
+     "6": 6
+    },
+    "buckets": {
+     "QNP": 5,
+     "QRP": 13,
+     "RBP": 3,
+     "QBP": 5,
+     "QPRP": 1
+    },
+    "extraProbes": 0,
+    "property": "Defender to move, down at least a rook's worth of material (or facing a queen with rook + pawn): Q vs R+P, Q vs B+P, Q vs N+P, Q+P vs R+P, R+B vs P; defender pieces and pawn placed near the defending king; tablebase: exact draw; no legal defender move captures and no attacker piece is capturable (the draw is not a one-move tactic).",
+    "verificationPassRate": 0.084
+   }
+  },
+  "verificationPassRate": 0.308,
+  "duplicatesRemoved": 26,
+  "zeroItemConcepts": {
+   "endgames/pawn/triangulation": "unverified: no generated position could be shown (tablebase DTM-optimal line returning to the same placement with the defender to move) within the request budget; 200 probed candidates from the first local filter were all refuted (a direct pawn capture was faster), the corrected local filter (tempo loss = fastest plan) produced no candidates. Shipped empty; zugzwang ships instead."
+  },
+  "requests": {
+   "requests": 2476,
+   "cacheHits": 1309
+  },
+  "tierHeuristic": "concept tier +1 if only move, -1 if >=3 winning moves, +1 if DTM>40 plies, -1 if DTM<=6; clamped to concept tier +-1 and 0..6",
+  "playoutRule": "wins with DTM: ceil(1.5*ceil(dtm/2)) full moves; draws: hold 20 moves; else null"
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "schema": 1,
+ "generatedAt": "2026-11-11T16:18:56.459Z",
+ "packs": [
+  {
+   "id": "endgames",
+   "domain": "endgames",
+   "version": "1",
+   "license": "Positions generated procedurally; results from the Lichess tablebase API (tablebase.lichess.ovh, Syzygy/Gaviota)",
+   "source": "scripts/endgames/build.ts",
+   "generatedAt": "2026-11-11T05:53:53.609Z",
+   "count": 1107,
+   "shards": [
+    {
+     "file": "triangulation.json",
+     "key": "endgames/pawn/triangulation",
+     "count": 0,
+     "bytes": 2
+    },
+    {
+     "file": "kqk.json",
+     "key": "endgames/mating/kqk",
+     "count": 79,
+     "bytes": 148377
+    },
+    {
+     "file": "krk.json",
+     "key": "endgames/mating/krk",
+     "count": 80,
+     "bytes": 108991
+    },
+    {
+     "file": "rule-of-the-square.json",
+     "key": "endgames/pawn/rule-of-the-square",
+     "count": 80,
+     "bytes": 51379
+    },
+    {
+     "file": "opposition.json",
+     "key": "endgames/pawn/opposition",
+     "count": 80,
+     "bytes": 46442
+    },
+    {
+     "file": "key-squares.json",
+     "key": "endgames/pawn/key-squares",
+     "count": 80,
+     "bytes": 50830
+    },
+    {
+     "file": "pawn-race.json",
+     "key": "endgames/pawn/pawn-race",
+     "count": 80,
+     "bytes": 50472
+    },
+    {
+     "file": "outside-passed-pawn.json",
+     "key": "endgames/pawn/outside-passed-pawn",
+     "count": 80,
+     "bytes": 59265
+    },
+    {
+     "file": "zugzwang.json",
+     "key": "endgames/pawn/zugzwang",
+     "count": 80,
+     "bytes": 45359
+    },
+    {
+     "file": "kq-vs-kp.json",
+     "key": "endgames/queen/kq-vs-kp",
+     "count": 68,
+     "bytes": 123767
+    },
+    {
+     "file": "cutting-off-king.json",
+     "key": "endgames/rook/cutting-off-king",
+     "count": 10,
+     "bytes": 13185
+    },
+    {
+     "file": "rook-behind-passed-pawn.json",
+     "key": "endgames/rook/rook-behind-passed-pawn",
+     "count": 40,
+     "bytes": 52436
+    },
+    {
+     "file": "lucena.json",
+     "key": "endgames/rook/lucena",
+     "count": 80,
+     "bytes": 95529
+    },
+    {
+     "file": "philidor.json",
+     "key": "endgames/rook/philidor",
+     "count": 10,
+     "bytes": 11780
+    },
+    {
+     "file": "wrong-bishop.json",
+     "key": "endgames/minor/wrong-bishop",
+     "count": 80,
+     "bytes": 76473
+    },
+    {
+     "file": "same-color-bishops.json",
+     "key": "endgames/minor/same-color-bishops",
+     "count": 52,
+     "bytes": 53545
+    },
+    {
+     "file": "opposite-color-bishops.json",
+     "key": "endgames/minor/opposite-color-bishops",
+     "count": 52,
+     "bytes": 53235
+    },
+    {
+     "file": "knight-vs-bishop.json",
+     "key": "endgames/minor/knight-vs-bishop",
+     "count": 49,
+     "bytes": 47339
+    },
+    {
+     "file": "fortress.json",
+     "key": "endgames/drawing/fortress",
+     "count": 27,
+     "bytes": 27369
+    }
+   ]
+  },
+  {
+   "id": "openings",
+   "domain": "openings",
+   "version": "1",
+   "license": "CC0-1.0 (Lichess game database; lichess-org/chess-openings)",
+   "source": "lichess-org/chess-openings; https://database.lichess.org/standard/lichess_db_standard_rated_2026-10.pgn.zst; Stockfish evaluations",
+   "generatedAt": "2026-11-11T02:55:46.493Z",
+   "count": 74735,
+   "shards": [
+    {
+     "file": "names.json",
+     "key": "names",
+     "count": 3865,
+     "bytes": 660431
+    },
+    {
+     "file": "book-0-1199.json",
+     "key": "book:0-1199",
+     "count": 15727,
+     "bytes": 1609008
+    },
+    {
+     "file": "book-1200-1599.json",
+     "key": "book:1200-1599",
+     "count": 18593,
+     "bytes": 1914909
+    },
+    {
+     "file": "book-1600-1999.json",
+     "key": "book:1600-1999",
+     "count": 18280,
+     "bytes": 1854482
+    },
+    {
+     "file": "book-2000+.json",
+     "key": "book:2000+",
+     "count": 18192,
+     "bytes": 1743688
+    },
+    {
+     "file": "traps.json",
+     "key": "traps",
+     "count": 7,
+     "bytes": 6664
+    },
+    {
+     "file": "cards.json",
+     "key": "cards",
+     "count": 71,
+     "bytes": 67617
+    }
+   ]
+  },
+  {
+   "id": "strategy",
+   "domain": "strategy",
+   "version": "1",
+   "license": "CC0 (Lichess game database); labels by Stockfish (GPLv3)",
+   "source": "Lichess games with both players >= 2200, analysed with Stockfish lite single-threaded WASM",
+   "generatedAt": "2026-11-11T06:38:48.583Z",
+   "count": 2986,
+   "shards": [
+    {
+     "file": "strategy-000.json",
+     "key": "000",
+     "count": 500,
+     "bytes": 383252
+    },
+    {
+     "file": "strategy-001.json",
+     "key": "001",
+     "count": 500,
+     "bytes": 382981
+    },
+    {
+     "file": "strategy-002.json",
+     "key": "002",
+     "count": 500,
+     "bytes": 384104
+    },
+    {
+     "file": "strategy-003.json",
+     "key": "003",
+     "count": 500,
+     "bytes": 383405
+    },
+    {
+     "file": "strategy-004.json",
+     "key": "004",
+     "count": 500,
+     "bytes": 384658
+    },
+    {
+     "file": "strategy-005.json",
+     "key": "005",
+     "count": 486,
+     "bytes": 373494
+    }
+   ]
+  },
+  {
+   "id": "tactics",
+   "domain": "tactics",
+   "version": "1",
+   "license": "CC0-1.0",
+   "source": "https://database.lichess.org/lichess_db_puzzle.csv.zst",
+   "generatedAt": "2026-11-10T21:57:22.468Z",
+   "count": 59983,
+   "shards": [
+    {
+     "file": "r0400.json",
+     "key": "400",
+     "count": 1897,
+     "bytes": 279867
+    },
+    {
+     "file": "r0600.json",
+     "key": "600",
+     "count": 4208,
+     "bytes": 658107
+    },
+    {
+     "file": "r0800.json",
+     "key": "800",
+     "count": 6073,
+     "bytes": 978353
+    },
+    {
+     "file": "r1000.json",
+     "key": "1000",
+     "count": 6262,
+     "bytes": 1020514
+    },
+    {
+     "file": "r1200.json",
+     "key": "1200",
+     "count": 6653,
+     "bytes": 1106944
+    },
+    {
+     "file": "r1400.json",
+     "key": "1400",
+     "count": 6629,
+     "bytes": 1112171
+    },
+    {
+     "file": "r1600.json",
+     "key": "1600",
+     "count": 6125,
+     "bytes": 1033302
+    },
+    {
+     "file": "r1800.json",
+     "key": "1800",
+     "count": 5552,
+     "bytes": 940276
+    },
+    {
+     "file": "r2000.json",
+     "key": "2000",
+     "count": 4996,
+     "bytes": 849922
+    },
+    {
+     "file": "r2200.json",
+     "key": "2200",
+     "count": 4402,
+     "bytes": 760863
+    },
+    {
+     "file": "r2400.json",
+     "key": "2400",
+     "count": 3840,
+     "bytes": 662852
+    },
+    {
+     "file": "r2600.json",
+     "key": "2600",
+     "count": 2790,
+     "bytes": 475381
+    },
+    {
+     "file": "r2800.json",
+     "key": "2800",
+     "count": 556,
+     "bytes": 93794
+    }
+   ]
+  }
+ ]
+}

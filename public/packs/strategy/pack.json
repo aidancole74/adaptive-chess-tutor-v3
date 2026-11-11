@@ -1,0 +1,159 @@
+{
+ "id": "strategy",
+ "domain": "strategy",
+ "version": "1",
+ "license": "CC0 (Lichess game database); labels by Stockfish (GPLv3)",
+ "source": "Lichess games with both players >= 2200, analysed with Stockfish lite single-threaded WASM",
+ "generatedAt": "2026-11-11T06:38:48.583Z",
+ "count": 2986,
+ "shards": [
+  {
+   "file": "strategy-000.json",
+   "key": "000",
+   "count": 500,
+   "bytes": 383252
+  },
+  {
+   "file": "strategy-001.json",
+   "key": "001",
+   "count": 500,
+   "bytes": 382981
+  },
+  {
+   "file": "strategy-002.json",
+   "key": "002",
+   "count": 500,
+   "bytes": 384104
+  },
+  {
+   "file": "strategy-003.json",
+   "key": "003",
+   "count": 500,
+   "bytes": 383405
+  },
+  {
+   "file": "strategy-004.json",
+   "key": "004",
+   "count": 500,
+   "bytes": 384658
+  },
+  {
+   "file": "strategy-005.json",
+   "key": "005",
+   "count": 486,
+   "bytes": 373494
+  }
+ ],
+ "meta": {
+  "gamesRead": 8000,
+  "positionsSampled": 96000,
+  "preFilterSkipped": {
+   "in-check": 3882,
+   "game-over": 0,
+   "duplicate-epd": 851,
+   "illegal-replay": 0
+  },
+  "tasks": 91267,
+  "analysed": 91267,
+  "kept": 2986,
+  "rejections": {
+   "pre-small-margin": 26295,
+   "pre-not-quiet": 46627,
+   "small-margin": 7638,
+   "decided": 1967,
+   "pre-decided": 2931,
+   "best-not-quiet": 2788,
+   "mate-score": 35
+  },
+  "perPlan": {
+   "prophylaxis": 932,
+   "develop": 135,
+   "centralize": 308,
+   "trade-offer": 145,
+   "gain-space": 403,
+   "improve-piece": 379,
+   "rook-to-open-file": 137,
+   "pawn-break": 117,
+   "king-safety": 171,
+   "attack-king": 188,
+   "create-passed-pawn": 25,
+   "piece-to-outpost": 46
+  },
+  "perStructure": {
+   "other": 1973,
+   "iqp-black": 104,
+   "open-centre": 450,
+   "iqp-white": 143,
+   "carlsbad": 70,
+   "maroczy-white": 30,
+   "closed-centre": 158,
+   "hanging-pawns-black": 15,
+   "maroczy-black": 10,
+   "hanging-pawns-white": 32,
+   "symmetrical": 1
+  },
+  "perConcept": {
+   "strategy/planning/quiet-move": 2986,
+   "strategy/planning/choose-plan": 2914,
+   "strategy/planning/evaluate-trade": 761,
+   "strategy/development/development": 215,
+   "strategy/pieces/activity": 1150,
+   "strategy/planning/who-is-better": 1920,
+   "strategy/space/space": 861,
+   "strategy/files/open-file": 185,
+   "strategy/files/semi-open-file": 112,
+   "strategy/squares/weak-squares": 158,
+   "strategy/king/king-safety": 462,
+   "strategy/pawns/passed": 40,
+   "strategy/pawns/backward": 96,
+   "strategy/pieces/good-bad-bishop": 75,
+   "strategy/pawns/maroczy": 6,
+   "strategy/squares/outpost": 70,
+   "strategy/pawns/hanging-pawns": 7,
+   "strategy/pawns/carlsbad": 1
+  },
+  "perDeltaConcept": {
+   "strategy/pieces/activity": 605,
+   "strategy/development/development": 135,
+   "strategy/space/space": 557,
+   "strategy/files/semi-open-file": 112,
+   "strategy/files/open-file": 102,
+   "strategy/squares/weak-squares": 158,
+   "strategy/king/king-safety": 187,
+   "strategy/pawns/passed": 35,
+   "strategy/pawns/backward": 96,
+   "strategy/pieces/good-bad-bishop": 75,
+   "strategy/pawns/maroczy": 6,
+   "strategy/squares/outpost": 68,
+   "strategy/pawns/hanging-pawns": 7,
+   "strategy/pawns/carlsbad": 1
+  },
+  "perTier": {
+   "2": 236,
+   "3": 1580,
+   "4": 1170
+  },
+  "trades": {
+   "bad": 562,
+   "none": 2338,
+   "neutral": 86
+  },
+  "depth": 14,
+  "multipv": 4,
+  "marginCp": 60,
+  "maxAbsCp": 400,
+  "quietPlies": 3,
+  "prefilter": {
+   "depth": 8,
+   "marginCp": 20,
+   "maxAbsCp": 600,
+   "multipv": 2
+  },
+  "plies": [
+   16,
+   60
+  ],
+  "perGame": 12,
+  "buildSeconds": 5829
+ }
+}
